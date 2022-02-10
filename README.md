@@ -1,5 +1,5 @@
 # pufftrc Package
-last change 16-Jan-2022
+last change 10-Feb-2022
 ### An alternate method to interface to tracing.
 A different approach to accomplish what is in the standard library documentation as:
 >Debugging and profiling -> trace -> Programmatic Interface.
@@ -89,7 +89,7 @@ which returns True when an event occurs where you want the state
 of the program preserved. The function should be optimized for the
 path that returns False.
 
-This call mustbe made after the Trc.On().
+This call must be made after the Trc.On().
 
 The function must be valid to execute in any environment. Variables must
 remain in scope.
@@ -386,3 +386,6 @@ Traceback (most recent call last):
     assert False, "***Puff had a StopWhen return True"
 AssertionError: ***Puff had a StopWhen return True
 ```
+## Watch For:
+This topic is doscussed on more detail in the chapter on Debugging in a book I have written.
+I will update this with information when the book is published.
